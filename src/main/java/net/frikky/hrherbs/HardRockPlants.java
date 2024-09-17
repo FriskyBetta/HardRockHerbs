@@ -2,6 +2,7 @@ package net.frikky.hrherbs;
 
 import com.mojang.logging.LogUtils;
 import net.frikky.hrherbs.items.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,15 +16,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(HardRockPlantsMain.MOD_ID)
-public class HardRockPlantsMain
+@Mod(HardRockPlants.MOD_ID)
+public class HardRockPlants
 {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "hrherbs";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public HardRockPlantsMain()
+    public HardRockPlants()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -47,6 +48,9 @@ public class HardRockPlantsMain
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ALOESEEDS);
+        }
 
     }
 
