@@ -14,15 +14,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(HardRockHerbs.MOD_ID)
-public class HardRockHerbs
+@Mod(HardRockPlantsMain.MOD_ID)
+public class HardRockPlantsMain
 {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "hrherbs";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public HardRockHerbs()
+    public HardRockPlantsMain()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
