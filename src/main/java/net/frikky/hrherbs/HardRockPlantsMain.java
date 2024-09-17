@@ -1,6 +1,7 @@
 package net.frikky.hrherbs;
 
 import com.mojang.logging.LogUtils;
+import net.frikky.hrherbs.items.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,6 +26,8 @@ public class HardRockPlantsMain
     public HardRockPlantsMain()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
