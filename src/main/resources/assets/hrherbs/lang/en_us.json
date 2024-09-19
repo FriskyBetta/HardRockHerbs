@@ -1,6 +1,12 @@
 {
   "item.hrherbs.aloe_seeds": "Aloe Seeds",
   "item.hrherbs.aloe_vera": "Aloe Vera",
+  "item.hrherbs.bergamot": "Bergamot",
+  "item.hrherbs.catnip": "Catnip",
+  "item.hrherbs.clover": "Clover",
+  "item.hrherbs.clover_seeds": "Clover Seeds",
+  "item.hrherbs.catnip_seeds": "Catnip Seeds",
+  "item.hrherbs.bergamot_seeds": "Bergamot Seeds",
 
   "creativetab.hardrock_tab": "HardRock Plants"
 }

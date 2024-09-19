@@ -16,11 +16,17 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, HardRockPlants.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> HARDROCK_TAB = CREATIVE_MODE_TABS.register("hardrock_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALOEVERA.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALOE_VERA.get()))
                     .title(Component.translatable("creativetab.hardrock_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ALOESEEDS.get());
-                        output.accept(ModItems.ALOEVERA.get());
+                        output.accept(ModItems.ALOE_SEEDS.get());
+                        output.accept(ModItems.ALOE_VERA.get());
+                        output.accept(ModItems.BERGAMOT.get());
+                        output.accept(ModItems.BERGAMOT_SEEDS.get());
+                        output.accept(ModItems.CATNIP.get());
+                        output.accept(ModItems.CATNIP_SEEDS.get());
+                        output.accept(ModItems.CLOVER.get());
+                        output.accept(ModItems.CLOVER_SEEDS.get());
                     })
                     .build());
 

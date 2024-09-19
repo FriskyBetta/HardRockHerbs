@@ -51,8 +51,14 @@ public class HardRockPlants
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ALOESEEDS);
-            event.accept(ModItems.ALOEVERA);
+            event.accept(ModItems.ALOE_SEEDS);
+            event.accept(ModItems.ALOE_VERA);
+            event.accept(ModItems.BERGAMOT);
+            event.accept(ModItems.CATNIP);
+            event.accept(ModItems.CLOVER);
+            event.accept(ModItems.CATNIP_SEEDS);
+            event.accept(ModItems.BERGAMOT_SEEDS);
+            event.accept(ModItems.CLOVER_SEEDS);
         }
 
     }

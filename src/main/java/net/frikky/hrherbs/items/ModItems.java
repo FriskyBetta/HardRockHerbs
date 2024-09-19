@@ -11,9 +11,21 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, HardRockPlants.MOD_ID);
 
-    public static final RegistryObject<Item> ALOESEEDS= ITEMS.register("aloe_seeds",
+    public static final RegistryObject<Item> ALOE_SEEDS= ITEMS.register("aloe_seeds",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ALOEVERA = ITEMS.register("aloe_vera",
+    public static final RegistryObject<Item> ALOE_VERA = ITEMS.register("aloe_vera",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BERGAMOT = ITEMS.register("bergamot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CATNIP = ITEMS.register("catnip",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CLOVER = ITEMS.register("clover",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BERGAMOT_SEEDS = ITEMS.register("bergamot_seeds",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CATNIP_SEEDS = ITEMS.register("catnip_seeds",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CLOVER_SEEDS = ITEMS.register("clover_seeds",
             () -> new Item(new Item.Properties()));
 
 
