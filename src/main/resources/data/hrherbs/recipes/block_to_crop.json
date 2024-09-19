@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "hrherbs:placeholder_block"
+    }
+  ],
+  "result": {
+    "item": "hrherbs:aloe_vera",
+    "count": 9
+  }
+}
