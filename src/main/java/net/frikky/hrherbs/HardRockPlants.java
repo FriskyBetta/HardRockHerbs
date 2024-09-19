@@ -2,7 +2,7 @@ package net.frikky.hrherbs;
 
 import com.mojang.logging.LogUtils;
 import net.frikky.hrherbs.blocks.ModBlocks;
-import net.frikky.hrherbs.items.ModCreativeModeTabs;
+import net.frikky.hrherbs.custom.ModCreativeModeTabs;
 import net.frikky.hrherbs.items.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;

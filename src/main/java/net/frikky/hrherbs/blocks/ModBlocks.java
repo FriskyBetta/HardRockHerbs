@@ -18,11 +18,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS=
             DeferredRegister.create(ForgeRegistries.BLOCKS, HardRockPlants.MOD_ID);
 
+
+
 //Add new blocks like this
     public static final RegistryObject<Block> PLACEHOLDER_BLOCK = registerBlock("placeholder_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
-
-
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
