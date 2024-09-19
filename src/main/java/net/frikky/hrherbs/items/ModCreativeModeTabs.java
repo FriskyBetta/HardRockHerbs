@@ -1,6 +1,7 @@
 package net.frikky.hrherbs.items;
 
 import net.frikky.hrherbs.HardRockPlants;
+import net.frikky.hrherbs.blocks.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALOE_VERA.get()))
                     .title(Component.translatable("creativetab.hardrock_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Items
                         output.accept(ModItems.ALOE_SEEDS.get());
                         output.accept(ModItems.ALOE_VERA.get());
                         output.accept(ModItems.BERGAMOT.get());
@@ -27,6 +29,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CATNIP_SEEDS.get());
                         output.accept(ModItems.CLOVER.get());
                         output.accept(ModItems.CLOVER_SEEDS.get());
+
+                        //Blocks
+                        output.accept(ModBlocks.PLACEHOLDER_BLOCK.get());
+
                     })
                     .build());
 

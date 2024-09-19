@@ -1,6 +1,7 @@
 package net.frikky.hrherbs;
 
 import com.mojang.logging.LogUtils;
+import net.frikky.hrherbs.blocks.ModBlocks;
 import net.frikky.hrherbs.items.ModCreativeModeTabs;
 import net.frikky.hrherbs.items.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class HardRockPlants
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -59,6 +61,8 @@ public class HardRockPlants
             event.accept(ModItems.CATNIP_SEEDS);
             event.accept(ModItems.BERGAMOT_SEEDS);
             event.accept(ModItems.CLOVER_SEEDS);
+
+            event.accept(ModBlocks.PLACEHOLDER_BLOCK);
         }
 
     }
