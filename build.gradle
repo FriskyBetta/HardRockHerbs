@@ -121,6 +121,14 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    maven {
+        maven { url 'https://maven.blamejared.com' }
+        url 'https://www.cursemaven.com'
+        // FG4: It's recommended to uncomment the following block
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {
@@ -130,6 +138,9 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+    implementation fg.deobf("curse.maven:terrafirmacraft-302973:5571484")
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:[1.20.1-84-FORGE]:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:[1.20.1-84-FORGE]")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -205,4 +216,12 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+minecraft {
+    runs {
+        client {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+        }
+    }
 }
