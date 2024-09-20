@@ -5,7 +5,6 @@ import net.frikky.hrherbs.block.HRBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -18,21 +17,17 @@ public class HRBlockTagGenerator extends BlockTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
-
-        this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(HRBlocks.PLACEHOLDER_BLOCK.get());
-
-        this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(HRBlocks.MAGNESIUM_ORE.get());
-
-        this.tag(BlockTags.MINEABLE_WITH_HOE)
-                .add(HRBlocks.PLACEHOLDER_BLOCK.get(),
-                        HRBlocks.PLACEHOLDER_BLOCK.get());
+    protected void addTags(HolderLookup.Provider pProvider) {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(HRBlocks.MAGNESIUM_ORE.get(),
                         HRBlocks.MAGNESIUM_ORE.get());
 
+
+        this.tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(HRBlocks.MAGNESIUM_ORE.get());
+
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(HRBlocks.PLACEHOLDER_BLOCK.get());
     }
 }

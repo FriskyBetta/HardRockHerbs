@@ -3,7 +3,6 @@ package net.frikky.hrherbs.datagen.loot;
 import net.frikky.hrherbs.block.HRBlocks;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -18,7 +17,6 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Set;
 
 public class HRBlockLootTables extends BlockLootSubProvider {
-
     public HRBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
@@ -26,15 +24,14 @@ public class HRBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(HRBlocks.PLACEHOLDER_BLOCK.get());
+        this.dropSelf(HRBlocks.MAGNESIUM_ORE.get());
+
 
         this.add(HRBlocks.MAGNESIUM_ORE.get(),
-                block -> createMagnesiumOreDrops(HRBlocks.MAGNESIUM_ORE.get(), HRItems.RAW_MAGNESIUM.get()));
-
-
-
+                block -> createCopperLikeOreDrops(HRBlocks.MAGNESIUM_ORE.get(), HRItems.RAW_MAGNESIUM.get()));
     }
 
-    protected LootTable.Builder createMagnesiumOreDrops(Block pBlock, Item item) {
+    protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
         return createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
