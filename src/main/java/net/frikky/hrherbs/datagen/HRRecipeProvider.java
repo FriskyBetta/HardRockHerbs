@@ -25,8 +25,8 @@ public class HRRecipeProvider extends RecipeProvider implements IConditionBuilde
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        oreSmelting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 200, "magnesium_sulfate");
+        oreBlasting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 100, "magnesium_sulfate");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HRBlocks.PLACEHOLDER_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
