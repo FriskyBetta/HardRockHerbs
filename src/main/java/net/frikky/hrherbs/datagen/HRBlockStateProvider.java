@@ -17,6 +17,7 @@ public class HRBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(HRBlocks.PLACEHOLDER_BLOCK);
+        blockWithItem(HRBlocks.MAGNESIUM_ORE);
 
     }
 

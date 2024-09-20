@@ -26,6 +26,8 @@ public class HRItemModelProvider extends ItemModelProvider {
         hrItem(HRItems.CLOVER_SEEDS);
         hrItem(HRItems.CLOVER);
 
+        hrItem(HRItems.RAW_MAGNESIUM);
+
 
     }
 

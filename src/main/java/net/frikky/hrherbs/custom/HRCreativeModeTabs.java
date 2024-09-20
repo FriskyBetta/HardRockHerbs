@@ -20,7 +20,10 @@ public class HRCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(HRItems.ALOE_VERA.get()))
                     .title(Component.translatable("creativetab.hardrock_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+
                         //Items
+                        output.accept(HRItems.RAW_MAGNESIUM.get());
+
                         output.accept(HRItems.ALOE_SEEDS.get());
                         output.accept(HRItems.ALOE_VERA.get());
                         output.accept(HRItems.BERGAMOT.get());
@@ -32,6 +35,7 @@ public class HRCreativeModeTabs {
 
                         //Blocks
                         output.accept(HRBlocks.PLACEHOLDER_BLOCK.get());
+                        output.accept(HRBlocks.MAGNESIUM_ORE.get());
 
                     })
                     .build());
