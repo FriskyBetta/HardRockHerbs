@@ -1,9 +1,9 @@
 package net.frikky.hrherbs;
 
 import com.mojang.logging.LogUtils;
-import net.frikky.hrherbs.block.ModBlocks;
-import net.frikky.hrherbs.custom.ModCreativeModeTabs;
-import net.frikky.hrherbs.item.ModItems;
+import net.frikky.hrherbs.block.HRBlocks;
+import net.frikky.hrherbs.custom.HRCreativeModeTabs;
+import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,10 +29,10 @@ public class HardRockPlants
     public HardRockPlants()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModCreativeModeTabs.register(modEventBus);
+        HRCreativeModeTabs.register(modEventBus);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        HRItems.register(modEventBus);
+        HRBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -53,16 +53,16 @@ public class HardRockPlants
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ALOE_SEEDS);
-            event.accept(ModItems.ALOE_VERA);
-            event.accept(ModItems.BERGAMOT);
-            event.accept(ModItems.CATNIP);
-            event.accept(ModItems.CLOVER);
-            event.accept(ModItems.CATNIP_SEEDS);
-            event.accept(ModItems.BERGAMOT_SEEDS);
-            event.accept(ModItems.CLOVER_SEEDS);
+            event.accept(HRItems.ALOE_SEEDS);
+            event.accept(HRItems.ALOE_VERA);
+            event.accept(HRItems.BERGAMOT);
+            event.accept(HRItems.CATNIP);
+            event.accept(HRItems.CLOVER);
+            event.accept(HRItems.CATNIP_SEEDS);
+            event.accept(HRItems.BERGAMOT_SEEDS);
+            event.accept(HRItems.CLOVER_SEEDS);
 
-            event.accept(ModBlocks.PLACEHOLDER_BLOCK);
+            event.accept(HRBlocks.PLACEHOLDER_BLOCK);
         }
 
     }
