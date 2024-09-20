@@ -24,7 +24,7 @@ public class AloeCropBlock extends CropBlock {
     }
 
     @Override
-    protected IntegerProperty getAgeProperty() {
+    public IntegerProperty getAgeProperty() {
         return AGE;
     }
 

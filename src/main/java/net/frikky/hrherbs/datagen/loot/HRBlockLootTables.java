@@ -1,7 +1,9 @@
 package net.frikky.hrherbs.datagen.loot;
 
 import net.frikky.hrherbs.block.HRBlocks;
+import net.frikky.hrherbs.crop.cropblock.AloeCropBlock;
 import net.frikky.hrherbs.item.HRItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -11,6 +13,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -29,6 +33,14 @@ public class HRBlockLootTables extends BlockLootSubProvider {
 
         this.add(HRBlocks.MAGNESIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(HRBlocks.MAGNESIUM_ORE.get(), HRItems.RAW_MAGNESIUM.get()));
+
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.ALOE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AloeCropBlock.AGE, 5));
+
+        this.add(HRBlocks.ALOE_CROP.get(), createCropDrops(HRBlocks.ALOE_CROP.get(), HRItems.ALOE_VERA.get(),
+                HRItems.ALOE_SEEDS.get(), lootitemcondition$builder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
