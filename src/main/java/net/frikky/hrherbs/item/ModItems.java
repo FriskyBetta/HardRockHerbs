@@ -1,4 +1,4 @@
-package net.frikky.hrherbs.items;
+package net.frikky.hrherbs.item;
 
 import net.frikky.hrherbs.HardRockPlants;
 import net.minecraft.world.item.Item;

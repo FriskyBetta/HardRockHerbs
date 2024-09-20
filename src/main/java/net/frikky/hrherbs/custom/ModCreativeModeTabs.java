@@ -1,8 +1,8 @@
 package net.frikky.hrherbs.custom;
 
 import net.frikky.hrherbs.HardRockPlants;
-import net.frikky.hrherbs.blocks.ModBlocks;
-import net.frikky.hrherbs.items.ModItems;
+import net.frikky.hrherbs.block.ModBlocks;
+import net.frikky.hrherbs.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

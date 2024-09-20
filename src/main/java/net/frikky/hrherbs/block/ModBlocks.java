@@ -1,7 +1,7 @@
-package net.frikky.hrherbs.blocks;
+package net.frikky.hrherbs.block;
 
 import net.frikky.hrherbs.HardRockPlants;
-import net.frikky.hrherbs.items.ModItems;
+import net.frikky.hrherbs.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
