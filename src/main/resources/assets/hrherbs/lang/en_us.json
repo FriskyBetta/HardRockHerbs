@@ -7,8 +7,10 @@
   "item.hrherbs.clover_seeds": "Clover Seeds",
   "item.hrherbs.catnip_seeds": "Catnip Seeds",
   "item.hrherbs.bergamot_seeds": "Bergamot Seeds",
+  "item.hrherbs.raw_magnesium": "Raw Magnesium",
 
   "block.hrherbs.placeholder_block": "Placeholder Block",
+  "block.hrherbs.magnesium_ore": "Magnesium Ore",
 
   "creativetab.hardrock_tab": "HardRock Plants"
 }

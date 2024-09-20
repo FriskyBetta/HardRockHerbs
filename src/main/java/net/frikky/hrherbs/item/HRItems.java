@@ -11,6 +11,12 @@ public class HRItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, HardRockPlants.MOD_ID);
 
+    public static final RegistryObject<Item> RAW_MAGNESIUM= ITEMS.register("raw_magnesium",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MAGNESIUM_SULPHATE= ITEMS.register("magnesium_sulphate",
+            () -> new Item(new Item.Properties()));
+
+
     public static final RegistryObject<Item> ALOE_SEEDS= ITEMS.register("aloe_seeds",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ALOE_VERA = ITEMS.register("aloe_vera",

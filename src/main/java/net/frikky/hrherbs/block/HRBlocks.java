@@ -24,6 +24,10 @@ public class HRBlocks {
     public static final RegistryObject<Block> PLACEHOLDER_BLOCK = registerBlock("placeholder_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
 
+    public static final RegistryObject<Block> MAGNESIUM_ORE = registerBlock("magnesium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

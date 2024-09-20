@@ -62,7 +62,11 @@ public class HardRockPlants
             event.accept(HRItems.BERGAMOT_SEEDS);
             event.accept(HRItems.CLOVER_SEEDS);
 
+            event.accept(HRItems.RAW_MAGNESIUM);
+
+
             event.accept(HRBlocks.PLACEHOLDER_BLOCK);
+            event.accept(HRBlocks.MAGNESIUM_ORE);
         }
 
     }
