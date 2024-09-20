@@ -63,6 +63,7 @@ public class HardRockPlants
             event.accept(HRItems.CLOVER_SEEDS);
 
             event.accept(HRItems.RAW_MAGNESIUM);
+            event.accept(HRItems.MAGNESIUM_SULPHATE);
 
 
             event.accept(HRBlocks.PLACEHOLDER_BLOCK);

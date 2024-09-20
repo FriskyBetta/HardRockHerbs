@@ -23,6 +23,7 @@ public class HRCreativeModeTabs {
 
                         //Items
                         output.accept(HRItems.RAW_MAGNESIUM.get());
+                        output.accept(HRItems.MAGNESIUM_SULPHATE.get());
 
                         output.accept(HRItems.ALOE_SEEDS.get());
                         output.accept(HRItems.ALOE_VERA.get());

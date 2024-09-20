@@ -27,6 +27,7 @@ public class HRItemModelProvider extends ItemModelProvider {
         hrItem(HRItems.CLOVER);
 
         hrItem(HRItems.RAW_MAGNESIUM);
+        hrItem(HRItems.MAGNESIUM_SULPHATE);
 
 
     }
