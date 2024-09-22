@@ -23,18 +23,7 @@ public class HRItems {
             () -> new ItemNameBlockItem(HRBlocks.ALOE_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> ALOE_VERA = ITEMS.register("aloe_vera",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BERGAMOT = ITEMS.register("bergamot",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CATNIP = ITEMS.register("catnip",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CLOVER = ITEMS.register("clover",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BERGAMOT_SEEDS = ITEMS.register("bergamot_seeds",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CATNIP_SEEDS = ITEMS.register("catnip_seeds",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CLOVER_SEEDS = ITEMS.register("clover_seeds",
-            () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventbus) {

@@ -17,7 +17,6 @@ public class AloeCropBlock extends CropBlock {
         super(pProperties);
     }
 
-
     @Override
     protected ItemLike getBaseSeedId() {
         return HRItems.ALOE_SEEDS.get();

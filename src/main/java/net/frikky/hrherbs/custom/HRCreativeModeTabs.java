@@ -27,12 +27,6 @@ public class HRCreativeModeTabs {
 
                         output.accept(HRItems.ALOE_SEEDS.get());
                         output.accept(HRItems.ALOE_VERA.get());
-                        output.accept(HRItems.BERGAMOT.get());
-                        output.accept(HRItems.BERGAMOT_SEEDS.get());
-                        output.accept(HRItems.CATNIP.get());
-                        output.accept(HRItems.CATNIP_SEEDS.get());
-                        output.accept(HRItems.CLOVER.get());
-                        output.accept(HRItems.CLOVER_SEEDS.get());
 
                         //Blocks
                         output.accept(HRBlocks.PLACEHOLDER_BLOCK.get());

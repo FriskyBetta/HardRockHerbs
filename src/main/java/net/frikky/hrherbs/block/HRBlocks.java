@@ -30,8 +30,6 @@ public class HRBlocks {
 
     public static final RegistryObject<Block> ALOE_CROP = BLOCKS.register("aloe_crop",
             () -> new AloeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> BERGAMOT_CROP = BLOCKS.register("bergamot_crop",
-            () -> new AloeCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
