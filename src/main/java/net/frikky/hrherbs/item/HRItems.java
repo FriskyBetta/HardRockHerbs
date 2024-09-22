@@ -2,6 +2,7 @@ package net.frikky.hrherbs.item;
 
 import net.frikky.hrherbs.HardRockPlants;
 import net.frikky.hrherbs.block.HRBlocks;
+import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,7 +17,7 @@ public class HRItems {
     public static final RegistryObject<Item> RAW_MAGNESIUM= ITEMS.register("raw_magnesium",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MAGNESIUM_SULPHATE= ITEMS.register("magnesium_sulphate",
-            () -> new Item(new Item.Properties()));
+            () -> new BoneMealItem(new Item.Properties()));
 
 //Crop Items
     public static final RegistryObject<Item> ALOE_SEEDS= ITEMS.register("aloe_seeds",
