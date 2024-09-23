@@ -23,6 +23,10 @@ public class HRItems {
             () -> new ItemNameBlockItem(HRBlocks.ALOE_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> ALOE_VERA = ITEMS.register("aloe_vera",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BERGAMOT_SEEDS= ITEMS.register("bergamot_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.BERGAMOT_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> BERGAMOT = ITEMS.register("bergamot",
+            () -> new Item(new Item.Properties()));
 
 
 
