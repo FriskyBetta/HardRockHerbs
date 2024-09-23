@@ -2,6 +2,7 @@ package net.frikky.hrherbs.datagen.loot;
 
 import net.frikky.hrherbs.block.HRBlocks;
 import net.frikky.hrherbs.crop.cropblock.AloeCropBlock;
+import net.frikky.hrherbs.crop.cropblock.BergamotCropBlock;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -35,12 +36,17 @@ public class HRBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(HRBlocks.MAGNESIUM_ORE.get(), HRItems.RAW_MAGNESIUM.get()));
 
 
-        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+        LootItemCondition.Builder aloeBuilder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(HRBlocks.ALOE_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AloeCropBlock.AGE, 5));
-
         this.add(HRBlocks.ALOE_CROP.get(), createCropDrops(HRBlocks.ALOE_CROP.get(), HRItems.ALOE_VERA.get(),
-                HRItems.ALOE_SEEDS.get(), lootitemcondition$builder));
+                HRItems.ALOE_SEEDS.get(), aloeBuilder));
+
+        LootItemCondition.Builder bergamotBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.BERGAMOT_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BergamotCropBlock.AGE, 5));
+        this.add(HRBlocks.BERGAMOT_CROP.get(), createCropDrops(HRBlocks.BERGAMOT_CROP.get(), HRItems.BERGAMOT.get(),
+                HRItems.BERGAMOT_SEEDS.get(), bergamotBuilder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

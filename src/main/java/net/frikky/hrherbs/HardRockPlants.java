@@ -55,6 +55,8 @@ public class HardRockPlants
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(HRItems.ALOE_SEEDS);
             event.accept(HRItems.ALOE_VERA);
+            event.accept(HRItems.BERGAMOT_SEEDS);
+            event.accept(HRItems.BERGAMOT);
 
             event.accept(HRItems.RAW_MAGNESIUM);
             event.accept(HRItems.MAGNESIUM_SULPHATE);
