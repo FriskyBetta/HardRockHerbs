@@ -28,6 +28,10 @@ public class HRItems {
             () -> new ItemNameBlockItem(HRBlocks.BERGAMOT_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> BERGAMOT = ITEMS.register("bergamot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CATNIP_SEEDS= ITEMS.register("catnip_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.CATNIP_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CATNIP = ITEMS.register("catnip",
+            () -> new Item(new Item.Properties()));
 
 
 

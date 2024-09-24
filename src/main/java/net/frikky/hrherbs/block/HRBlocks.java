@@ -3,6 +3,7 @@ package net.frikky.hrherbs.block;
 import net.frikky.hrherbs.HardRockPlants;
 import net.frikky.hrherbs.crop.cropblock.AloeCropBlock;
 import net.frikky.hrherbs.crop.cropblock.BergamotCropBlock;
+import net.frikky.hrherbs.crop.cropblock.CatnipCropBlock;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -33,6 +34,8 @@ public class HRBlocks {
             () -> new AloeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> BERGAMOT_CROP = BLOCKS.register("bergamot_crop",
             () -> new BergamotCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> CATNIP_CROP = BLOCKS.register("catnip_crop",
+            () -> new CatnipCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

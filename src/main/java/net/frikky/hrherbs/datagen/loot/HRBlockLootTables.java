@@ -47,6 +47,12 @@ public class HRBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BergamotCropBlock.AGE, 5));
         this.add(HRBlocks.BERGAMOT_CROP.get(), createCropDrops(HRBlocks.BERGAMOT_CROP.get(), HRItems.BERGAMOT.get(),
                 HRItems.BERGAMOT_SEEDS.get(), bergamotBuilder));
+
+        LootItemCondition.Builder catnipBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.CATNIP_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BergamotCropBlock.AGE, 5));
+        this.add(HRBlocks.CATNIP_CROP.get(), createCropDrops(HRBlocks.CATNIP_CROP.get(), HRItems.CATNIP.get(),
+                HRItems.CATNIP_SEEDS.get(), catnipBuilder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

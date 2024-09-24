@@ -57,6 +57,8 @@ public class HardRockPlants
             event.accept(HRItems.ALOE_VERA);
             event.accept(HRItems.BERGAMOT_SEEDS);
             event.accept(HRItems.BERGAMOT);
+            event.accept(HRItems.CATNIP_SEEDS);
+            event.accept(HRItems.CATNIP);
 
             event.accept(HRItems.RAW_MAGNESIUM);
             event.accept(HRItems.MAGNESIUM_SULPHATE);
