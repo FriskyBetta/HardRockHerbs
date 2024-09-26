@@ -32,7 +32,10 @@ public class HRItems {
             () -> new ItemNameBlockItem(HRBlocks.CATNIP_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CATNIP = ITEMS.register("catnip",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> CLOVER_SEEDS= ITEMS.register("clover_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.CLOVER_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CLOVER = ITEMS.register("clover",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventbus) {

@@ -23,6 +23,8 @@ public class HRItemModelProvider extends ItemModelProvider {
         hrItem(HRItems.BERGAMOT);
         hrItem(HRItems.CATNIP_SEEDS);
         hrItem(HRItems.CATNIP);
+        hrItem(HRItems.CLOVER_SEEDS);
+        hrItem(HRItems.CLOVER);
 
 
         hrItem(HRItems.RAW_MAGNESIUM);

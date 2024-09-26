@@ -34,13 +34,12 @@ public class HardRockPlants
         HRItems.register(modEventBus);
         HRBlocks.register(modEventBus);
 
-        // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register ourselves for server and other game events we are interested in
+
         MinecraftForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
+
         modEventBus.addListener(this::addCreative);
     }
 
@@ -49,7 +48,7 @@ public class HardRockPlants
 
     }
 
-    // Add the example block item to the building blocks tab
+
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
@@ -59,6 +58,8 @@ public class HardRockPlants
             event.accept(HRItems.BERGAMOT);
             event.accept(HRItems.CATNIP_SEEDS);
             event.accept(HRItems.CATNIP);
+            event.accept(HRItems.CLOVER_SEEDS);
+            event.accept(HRItems.CLOVER);
 
             event.accept(HRItems.RAW_MAGNESIUM);
             event.accept(HRItems.MAGNESIUM_SULPHATE);

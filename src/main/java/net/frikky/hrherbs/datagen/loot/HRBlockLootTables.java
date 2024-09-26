@@ -3,6 +3,7 @@ package net.frikky.hrherbs.datagen.loot;
 import net.frikky.hrherbs.block.HRBlocks;
 import net.frikky.hrherbs.crop.cropblock.AloeCropBlock;
 import net.frikky.hrherbs.crop.cropblock.BergamotCropBlock;
+import net.frikky.hrherbs.crop.cropblock.CloverCropBlock;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -53,6 +54,12 @@ public class HRBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(BergamotCropBlock.AGE, 5));
         this.add(HRBlocks.CATNIP_CROP.get(), createCropDrops(HRBlocks.CATNIP_CROP.get(), HRItems.CATNIP.get(),
                 HRItems.CATNIP_SEEDS.get(), catnipBuilder));
+
+        LootItemCondition.Builder cloverBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.CLOVER_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CloverCropBlock.AGE, 5));
+        this.add(HRBlocks.CLOVER_CROP.get(), createCropDrops(HRBlocks.CLOVER_CROP.get(), HRItems.CLOVER.get(),
+                HRItems.CLOVER_SEEDS.get(), cloverBuilder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

@@ -5,6 +5,7 @@ import net.frikky.hrherbs.block.HRBlocks;
 import net.frikky.hrherbs.crop.cropblock.AloeCropBlock;
 import net.frikky.hrherbs.crop.cropblock.BergamotCropBlock;
 import net.frikky.hrherbs.crop.cropblock.CatnipCropBlock;
+import net.frikky.hrherbs.crop.cropblock.CloverCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -31,6 +32,7 @@ public class HRBlockStateProvider extends BlockStateProvider {
         makeAloeCrop((CropBlock) HRBlocks.ALOE_CROP.get(), "aloevera_stage", "aloevera_stage");
         makeBergamotCrop((CropBlock) HRBlocks.BERGAMOT_CROP.get(), "bergamot_stage", "bergamot_stage");
         makeCatnipCrop((CropBlock) HRBlocks.CATNIP_CROP.get(), "catnip_stage", "catnip_stage");
+        makeCloverCrop((CropBlock) HRBlocks.CLOVER_CROP.get(), "clover_stage", "clover_stage");
     }
 
 
@@ -54,6 +56,11 @@ public class HRBlockStateProvider extends BlockStateProvider {
 
         getVariantBuilder(block).forAllStates(function);
     }
+    public void makeCloverCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> cloverStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
 
 
     private ConfiguredModel[] aloeStates(BlockState state, CropBlock block, String modelName, String textureName) {
@@ -74,6 +81,13 @@ public class HRBlockStateProvider extends BlockStateProvider {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((CatnipCropBlock) block).getAgeProperty()),
                 new ResourceLocation(HardRockPlants.MOD_ID, "block/" + textureName + state.getValue(((CatnipCropBlock) block)
+                        .getAgeProperty()))).renderType("cutout"));
+        return models;
+    }
+    private ConfiguredModel[] cloverStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((CloverCropBlock) block).getAgeProperty()),
+                new ResourceLocation(HardRockPlants.MOD_ID, "block/" + textureName + state.getValue(((CloverCropBlock) block)
                         .getAgeProperty()))).renderType("cutout"));
         return models;
     }
