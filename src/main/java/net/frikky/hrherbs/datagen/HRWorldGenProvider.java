@@ -23,8 +23,4 @@ public class HRWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public HRWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(HardRockPlants.MOD_ID));
     }
-
-    public HRWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries, Set<String> modIds) {
-        super(output, registries, modIds);
-    }
 }
