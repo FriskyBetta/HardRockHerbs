@@ -5,10 +5,13 @@ import net.frikky.hrherbs.block.HRBlocks;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.ticks.ContainerSingleItem;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -25,8 +28,9 @@ public class HRRecipeProvider extends RecipeProvider implements IConditionBuilde
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        oreSmelting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.RAW_MAGNESIUM.get(), 0.25f, 200, "raw_magnesium");
-        oreBlasting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.RAW_MAGNESIUM.get(), 0.25f, 100, "raw_magnesium");
+        oreSmelting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 200, "magnesium_sulphate");
+        oreBlasting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 100, "magnesium_sulphate");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HRBlocks.PLACEHOLDER_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
