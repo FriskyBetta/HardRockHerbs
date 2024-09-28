@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 
 public class HRTags {
 
+    public static TagKey<Block> commonTag = BlockTags.create(new ResourceLocation("forge", "ores/magnesium"));
+
     public static class Blocks {
 
 
