@@ -2,6 +2,8 @@ package net.frikky.hrherbs.item;
 
 import net.frikky.hrherbs.HardRockPlants;
 import net.frikky.hrherbs.block.HRBlocks;
+import net.frikky.hrherbs.custom.FertilizerItem;
+import net.frikky.hrherbs.custom.HRFoods;
 import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -17,7 +19,7 @@ public class HRItems {
     public static final RegistryObject<Item> RAW_MAGNESIUM= ITEMS.register("raw_magnesium",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MAGNESIUM_SULPHATE= ITEMS.register("magnesium_sulphate",
-            () -> new BoneMealItem(new Item.Properties()));
+            () -> new FertilizerItem(new Item.Properties()));
 
 //Crop Items
     public static final RegistryObject<Item> ALOE_SEEDS= ITEMS.register("aloe_seeds",
@@ -31,7 +33,7 @@ public class HRItems {
     public static final RegistryObject<Item> CATNIP_SEEDS= ITEMS.register("catnip_seeds",
             () -> new ItemNameBlockItem(HRBlocks.CATNIP_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CATNIP = ITEMS.register("catnip",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(HRFoods.CATNIP)));
     public static final RegistryObject<Item> CLOVER_SEEDS= ITEMS.register("clover_seeds",
             () -> new ItemNameBlockItem(HRBlocks.CLOVER_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CLOVER = ITEMS.register("clover",
