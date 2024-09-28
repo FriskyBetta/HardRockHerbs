@@ -10,6 +10,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -29,7 +30,7 @@ public class HRBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
 
     public static final RegistryObject<Block> MAGNESIUM_ORE = registerBlock("magnesium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
 
     public static final RegistryObject<Block> ALOE_CROP = BLOCKS.register("aloe_crop",
             () -> new AloeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));

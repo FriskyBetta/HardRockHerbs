@@ -8,6 +8,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
+import net.minecraftforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -23,6 +24,8 @@ public class HRBlockTagGenerator extends BlockTagsProvider {
                 .add(HRBlocks.MAGNESIUM_ORE.get(),
                         HRBlocks.MAGNESIUM_ORE.get());
 
+        this.tag(Tags.Blocks.ORES)
+                .add(HRBlocks.MAGNESIUM_ORE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(HRBlocks.MAGNESIUM_ORE.get());
