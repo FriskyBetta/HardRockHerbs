@@ -29,5 +29,7 @@ public class HRDataGenerators {
         HRBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                 new HRBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new HRItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeServer(), new HRWorldGenProvider(packOutput, lookupProvider));
     }
 }
