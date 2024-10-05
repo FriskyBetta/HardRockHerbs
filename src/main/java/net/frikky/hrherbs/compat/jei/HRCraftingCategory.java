@@ -1,4 +1,4 @@
-package net.frikky.hrherbs.compat;
+package net.frikky.hrherbs.compat.jei;
 
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
