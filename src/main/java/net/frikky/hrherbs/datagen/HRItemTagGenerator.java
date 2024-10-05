@@ -1,10 +1,12 @@
 package net.frikky.hrherbs.datagen;
 
 import net.frikky.hrherbs.HardRockPlants;
+import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -18,5 +20,11 @@ public class HRItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+        //Crops
+        this.tag(Tags.Items.CROPS)
+                .add(HRItems.ALOE_VERA.get())
+                .add(HRItems.BERGAMOT.get())
+                .add(HRItems.CATNIP.get())
+                .add(HRItems.CLOVER.get());
     }
 }
