@@ -6,6 +6,7 @@ import net.frikky.hrherbs.util.HRTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -20,6 +21,8 @@ public class HRBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
+        this.tag(Tags.Blocks.ORES)
+                .add(HRBlocks.MAGNESIUM_ORE.get());
         this.tag(HRTags.commonTag)
                 .add(HRBlocks.MAGNESIUM_ORE.get());
 
