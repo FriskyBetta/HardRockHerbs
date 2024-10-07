@@ -20,7 +20,7 @@ public class BergamotCropBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return HRItems.ALOE_SEEDS.get();
+        return HRItems.BERGAMOT_SEEDS.get();
     }
 
     @Override
