@@ -60,6 +60,20 @@ public class HardRockPlants
             event.accept(HRItems.CATNIP);
             event.accept(HRItems.CLOVER_SEEDS);
             event.accept(HRItems.CLOVER);
+            event.accept(HRItems.CHAM);
+            event.accept(HRItems.CHAM_SEEDS);
+            event.accept(HRItems.TUMERIC_SEEDS);
+            event.accept(HRItems.TUMERIC);
+            event.accept(HRItems.PEPPERMINT_SEEDS);
+            event.accept(HRItems.PEPPERMINT);
+            event.accept(HRItems.THYME_SEEDS);
+            event.accept(HRItems.THYME);
+            event.accept(HRItems.LEMONBALM_SEEDS);
+            event.accept(HRItems.LEMONBALM);
+            event.accept(HRItems.STJONSWORT_SEEDS);
+            event.accept(HRItems.STJONSWORT);
+            event.accept(HRItems.ROSEMARY_SEEDS);
+            event.accept(HRItems.ROSEMARY);
 
             event.accept(HRItems.RAW_MAGNESIUM);
             event.accept(HRItems.MAGNESIUM_SULPHATE);

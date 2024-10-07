@@ -25,6 +25,20 @@ public class HRItemModelProvider extends ItemModelProvider {
         hrItem(HRItems.CATNIP);
         hrItem(HRItems.CLOVER_SEEDS);
         hrItem(HRItems.CLOVER);
+        hrItem(HRItems.CHAM_SEEDS);
+        hrItem(HRItems.CHAM);
+        hrItem(HRItems.TUMERIC_SEEDS);
+        hrItem(HRItems.TUMERIC);
+        hrItem(HRItems.PEPPERMINT_SEEDS);
+        hrItem(HRItems.PEPPERMINT);
+        hrItem(HRItems.THYME_SEEDS);
+        hrItem(HRItems.THYME);
+        hrItem(HRItems.LEMONBALM_SEEDS);
+        hrItem(HRItems.LEMONBALM);
+        hrItem(HRItems.STJONSWORT_SEEDS);
+        hrItem(HRItems.STJONSWORT);
+        hrItem(HRItems.ROSEMARY_SEEDS);
+        hrItem(HRItems.ROSEMARY);
 
 
         hrItem(HRItems.RAW_MAGNESIUM);

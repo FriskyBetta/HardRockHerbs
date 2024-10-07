@@ -1,10 +1,7 @@
 package net.frikky.hrherbs.block;
 
 import net.frikky.hrherbs.HardRockPlants;
-import net.frikky.hrherbs.crop.cropblock.AloeCropBlock;
-import net.frikky.hrherbs.crop.cropblock.BergamotCropBlock;
-import net.frikky.hrherbs.crop.cropblock.CatnipCropBlock;
-import net.frikky.hrherbs.crop.cropblock.CloverCropBlock;
+import net.frikky.hrherbs.crop.cropblock.*;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,8 +20,6 @@ public class HRBlocks {
     public static final DeferredRegister<Block> BLOCKS=
             DeferredRegister.create(ForgeRegistries.BLOCKS, HardRockPlants.MOD_ID);
 
-
-
 //Add new blocks like this
     public static final RegistryObject<Block> PLACEHOLDER_BLOCK = registerBlock("placeholder_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
@@ -40,6 +35,20 @@ public class HRBlocks {
             () -> new CatnipCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CLOVER_CROP = BLOCKS.register("clover_crop",
             () -> new CloverCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> CHAM_CROP = BLOCKS.register("cham_crop",
+            () -> new ChamCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> TUMERIC_CROP = BLOCKS.register("tumeric_crop",
+            () -> new TumericCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> PEPPERMINT_CROP = BLOCKS.register("peppermint_crop",
+            () -> new PeppermintCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> THYME_CROP = BLOCKS.register("thyme_crop",
+            () -> new ThymeCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> LEMONBALM_CROP = BLOCKS.register("lemonbalm_crop",
+            () -> new LemonBalmCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> STJONSWORT_CROP = BLOCKS.register("stjonswort_crop",
+            () -> new StJonsWortCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> ROSEMARY_CROP = BLOCKS.register("rosemary_crop",
+            () -> new RosemaryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -38,7 +38,34 @@ public class HRItems {
             () -> new ItemNameBlockItem(HRBlocks.CLOVER_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CLOVER = ITEMS.register("clover",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> CHAM_SEEDS= ITEMS.register("cham_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.CHAM_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CHAM = ITEMS.register("cham",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TUMERIC_SEEDS= ITEMS.register("tumeric_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.TUMERIC_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> TUMERIC = ITEMS.register("tumeric",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PEPPERMINT_SEEDS= ITEMS.register("peppermint_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.PEPPERMINT_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PEPPERMINT = ITEMS.register("peppermint",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THYME_SEEDS= ITEMS.register("thyme_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.THYME_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LEMONBALM_SEEDS= ITEMS.register("lemonbalm_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.LEMONBALM_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STJONSWORT_SEEDS= ITEMS.register("stjonswort_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.STJONSWORT_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ROSEMARY_SEEDS= ITEMS.register("rosemary_seeds",
+            () -> new ItemNameBlockItem(HRBlocks.ROSEMARY_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> THYME = ITEMS.register("thyme",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEMONBALM = ITEMS.register("lemonbalm",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> STJONSWORT = ITEMS.register("stjonswort",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROSEMARY = ITEMS.register("rosemary",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);

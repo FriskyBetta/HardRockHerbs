@@ -25,6 +25,9 @@ public class HRItemTagGenerator extends ItemTagsProvider {
                 .add(HRItems.ALOE_VERA.get())
                 .add(HRItems.BERGAMOT.get())
                 .add(HRItems.CATNIP.get())
-                .add(HRItems.CLOVER.get());
+                .add(HRItems.CLOVER.get())
+                .add(HRItems.CHAM.get())
+                .add(HRItems.TUMERIC.get())
+                .add(HRItems.PEPPERMINT.get());
     }
 }

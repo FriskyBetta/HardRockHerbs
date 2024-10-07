@@ -1,9 +1,7 @@
 package net.frikky.hrherbs.datagen.loot;
 
 import net.frikky.hrherbs.block.HRBlocks;
-import net.frikky.hrherbs.crop.cropblock.AloeCropBlock;
-import net.frikky.hrherbs.crop.cropblock.BergamotCropBlock;
-import net.frikky.hrherbs.crop.cropblock.CloverCropBlock;
+import net.frikky.hrherbs.crop.cropblock.*;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -60,6 +58,48 @@ public class HRBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CloverCropBlock.AGE, 5));
         this.add(HRBlocks.CLOVER_CROP.get(), createCropDrops(HRBlocks.CLOVER_CROP.get(), HRItems.CLOVER.get(),
                 HRItems.CLOVER_SEEDS.get(), cloverBuilder));
+
+        LootItemCondition.Builder chamBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.CHAM_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ChamCropBlock.AGE, 5));
+        this.add(HRBlocks.CHAM_CROP.get(), createCropDrops(HRBlocks.CHAM_CROP.get(), HRItems.CHAM.get(),
+                HRItems.CHAM_SEEDS.get(), chamBuilder));
+
+        LootItemCondition.Builder tumericBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.TUMERIC_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TumericCropBlock.AGE, 5));
+        this.add(HRBlocks.TUMERIC_CROP.get(), createCropDrops(HRBlocks.TUMERIC_CROP.get(), HRItems.TUMERIC.get(),
+                HRItems.TUMERIC_SEEDS.get(), tumericBuilder));
+
+        LootItemCondition.Builder peppermintBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.PEPPERMINT_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TumericCropBlock.AGE, 5));
+        this.add(HRBlocks.PEPPERMINT_CROP.get(), createCropDrops(HRBlocks.PEPPERMINT_CROP.get(), HRItems.PEPPERMINT.get(),
+                HRItems.PEPPERMINT_SEEDS.get(), peppermintBuilder));
+
+        LootItemCondition.Builder thymeBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.THYME_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ThymeCropBlock.AGE, 5));
+        this.add(HRBlocks.THYME_CROP.get(), createCropDrops(HRBlocks.THYME_CROP.get(), HRItems.THYME.get(),
+                HRItems.THYME_SEEDS.get(), thymeBuilder));
+
+        LootItemCondition.Builder lemonBalmBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.LEMONBALM_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(LemonBalmCropBlock.AGE, 5));
+        this.add(HRBlocks.LEMONBALM_CROP.get(), createCropDrops(HRBlocks.LEMONBALM_CROP.get(), HRItems.LEMONBALM.get(),
+                HRItems.LEMONBALM_SEEDS.get(), lemonBalmBuilder));
+
+        LootItemCondition.Builder stJonsWortBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.STJONSWORT_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StJonsWortCropBlock.AGE, 5));
+        this.add(HRBlocks.STJONSWORT_CROP.get(), createCropDrops(HRBlocks.STJONSWORT_CROP.get(), HRItems.STJONSWORT.get(),
+                HRItems.STJONSWORT_SEEDS.get(), stJonsWortBuilder));
+
+        LootItemCondition.Builder rosemaryBuilder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(HRBlocks.ROSEMARY_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RosemaryCropBlock.AGE, 5));
+        this.add(HRBlocks.ROSEMARY_CROP.get(), createCropDrops(HRBlocks.ROSEMARY_CROP.get(), HRItems.ROSEMARY.get(),
+                HRItems.ROSEMARY_SEEDS.get(), rosemaryBuilder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

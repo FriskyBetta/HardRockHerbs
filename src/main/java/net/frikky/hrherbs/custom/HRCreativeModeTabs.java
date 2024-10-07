@@ -33,6 +33,20 @@ public class HRCreativeModeTabs {
                         output.accept(HRItems.CATNIP.get());
                         output.accept(HRItems.CLOVER_SEEDS.get());
                         output.accept(HRItems.CLOVER.get());
+                        output.accept(HRItems.CHAM_SEEDS.get());
+                        output.accept(HRItems.CHAM.get());
+                        output.accept(HRItems.TUMERIC_SEEDS.get());
+                        output.accept(HRItems.TUMERIC.get());
+                        output.accept(HRItems.PEPPERMINT_SEEDS.get());
+                        output.accept(HRItems.PEPPERMINT.get());
+                        output.accept(HRItems.THYME_SEEDS.get());
+                        output.accept(HRItems.THYME.get());
+                        output.accept(HRItems.LEMONBALM_SEEDS.get());
+                        output.accept(HRItems.LEMONBALM.get());
+                        output.accept(HRItems.STJONSWORT_SEEDS.get());
+                        output.accept(HRItems.STJONSWORT.get());
+                        output.accept(HRItems.ROSEMARY_SEEDS.get());
+                        output.accept(HRItems.ROSEMARY.get());
 
 
                         //Blocks
