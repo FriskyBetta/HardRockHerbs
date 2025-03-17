@@ -78,6 +78,8 @@ public class HardRockPlants
             event.accept(HRItems.RAW_MAGNESIUM);
             event.accept(HRItems.MAGNESIUM_SULPHATE);
 
+            event.accept(HRItems.MORTAR_PESTLE);
+
 
             event.accept(HRBlocks.PLACEHOLDER_BLOCK);
             event.accept(HRBlocks.MAGNESIUM_ORE);

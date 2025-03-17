@@ -29,5 +29,8 @@ public class HRItemTagGenerator extends ItemTagsProvider {
                 .add(HRItems.CHAM.get())
                 .add(HRItems.TUMERIC.get())
                 .add(HRItems.PEPPERMINT.get());
+
+        //Tools
+
     }
 }

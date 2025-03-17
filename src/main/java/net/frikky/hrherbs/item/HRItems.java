@@ -4,7 +4,6 @@ import net.frikky.hrherbs.HardRockPlants;
 import net.frikky.hrherbs.block.HRBlocks;
 import net.frikky.hrherbs.custom.FertilizerItem;
 import net.frikky.hrherbs.custom.HRFoods;
-import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -66,6 +65,12 @@ public class HRItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ROSEMARY = ITEMS.register("rosemary",
             () -> new Item(new Item.Properties()));
+
+
+    //Tool Items
+    public static final RegistryObject<Item> MORTAR_PESTLE = ITEMS.register("mortar_pestle",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);

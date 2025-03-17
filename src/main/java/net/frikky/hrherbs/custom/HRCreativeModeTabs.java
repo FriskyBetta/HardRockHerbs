@@ -48,6 +48,8 @@ public class HRCreativeModeTabs {
                         output.accept(HRItems.ROSEMARY_SEEDS.get());
                         output.accept(HRItems.ROSEMARY.get());
 
+                        output.accept(HRItems.MORTAR_PESTLE.get());
+
 
                         //Blocks
                         output.accept(HRBlocks.PLACEHOLDER_BLOCK.get());
