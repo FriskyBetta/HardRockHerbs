@@ -5,6 +5,8 @@ import net.frikky.hrherbs.block.HRBlocks;
 import net.frikky.hrherbs.item.HRItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -42,6 +44,16 @@ public class HRRecipeProvider extends RecipeProvider implements IConditionBuilde
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HRItems.ALOE_VERA.get(), 9)
                 .requires(HRBlocks.PLACEHOLDER_BLOCK.get())
                 .unlockedBy(getHasName(HRBlocks.PLACEHOLDER_BLOCK.get()), has(HRBlocks.PLACEHOLDER_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HRItems.MORTAR_PESTLE.get())
+                .pattern(" S ")
+                .pattern(" F ")
+                .pattern(" B ")
+                .define('S', Items.STICK)
+                .define('F', Items.FLINT)
+                .define('B', Items.BOWL)
+                .unlockedBy(getHasName(Items.BOWL), has(Items.STICK))
                 .save(pWriter);
     }
 
