@@ -43,6 +43,10 @@ public class HRItemModelProvider extends ItemModelProvider {
 
         hrItem(HRItems.MORTAR_PESTLE);
 
+        hrItem(HRItems.HEALTH_PASTE);
+        hrItem(HRItems.CURING_PASTE);
+        hrItem(HRItems.BURN_PASTE);
+
 
         hrItem(HRItems.RAW_MAGNESIUM);
         hrItem(HRItems.MAGNESIUM_SULPHATE);

@@ -11,6 +11,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.rmi.registry.Registry;
+
 public class HRItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, HardRockPlants.MOD_ID);
@@ -70,6 +72,15 @@ public class HRItems {
     //Tool Items
     public static final RegistryObject<Item> MORTAR_PESTLE = ITEMS.register("mortar_pestle",
             () -> new Item(new Item.Properties()));
+
+    //Paste Items
+    public static final RegistryObject<Item> HEALTH_PASTE = ITEMS.register("health_paste",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CURING_PASTE = ITEMS.register("curing_paste",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BURN_PASTE = ITEMS.register("burn_paste",
+            () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventbus) {

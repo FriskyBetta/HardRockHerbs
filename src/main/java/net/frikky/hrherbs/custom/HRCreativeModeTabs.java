@@ -50,6 +50,10 @@ public class HRCreativeModeTabs {
 
                         output.accept(HRItems.MORTAR_PESTLE.get());
 
+                        output.accept(HRItems.HEALTH_PASTE.get());
+                        output.accept(HRItems.CURING_PASTE.get());
+                        output.accept(HRItems.BURN_PASTE.get());
+
 
                         //Blocks
                         output.accept(HRBlocks.PLACEHOLDER_BLOCK.get());
