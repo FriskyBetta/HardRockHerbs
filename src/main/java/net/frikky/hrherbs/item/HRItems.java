@@ -68,7 +68,6 @@ public class HRItems {
     public static final RegistryObject<Item> ROSEMARY = ITEMS.register("rosemary",
             () -> new Item(new Item.Properties()));
 
-
     //Tool Items
     public static final RegistryObject<Item> MORTAR_PESTLE = ITEMS.register("mortar_pestle",
             () -> new Item(new Item.Properties()));
@@ -80,8 +79,6 @@ public class HRItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BURN_PASTE = ITEMS.register("burn_paste",
             () -> new Item(new Item.Properties()));
-
-
 
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);

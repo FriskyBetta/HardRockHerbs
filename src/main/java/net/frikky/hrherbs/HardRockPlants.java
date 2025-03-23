@@ -48,7 +48,6 @@ public class HardRockPlants
 
     }
 
-
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
