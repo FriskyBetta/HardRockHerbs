@@ -92,6 +92,7 @@ public class HardRockPlants
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
+        System.out.println("Thank you for playing with Hardrock Plants and Herbs!");
 
     }
 
@@ -102,6 +103,7 @@ public class HardRockPlants
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            System.out.println("Thank you for playing with Hardrock Plants and Herbs!");
 
         }
     }
