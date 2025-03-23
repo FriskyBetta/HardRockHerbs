@@ -54,6 +54,22 @@ public class HRRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .unlockedBy(getHasName(HRItems.MORTAR_PESTLE.get()), has(HRItems.MORTAR_PESTLE.get()))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HRItems.CURING_PASTE.get(), 2)
+                .requires(HRItems.BERGAMOT.get())
+                .requires(HRItems.MORTAR_PESTLE.get())
+                .requires(HRItems.TUMERIC.get())
+                .requires(HRItems.STJONSWORT.get())
+                .unlockedBy(getHasName(HRItems.MORTAR_PESTLE.get()), has(HRItems.MORTAR_PESTLE.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HRItems.BURN_PASTE.get(), 2)
+                .requires(HRItems.LEMONBALM.get())
+                .requires(HRItems.MORTAR_PESTLE.get())
+                .requires(HRItems.ALOE_VERA.get())
+                .requires(HRItems.ROSEMARY.get())
+                .unlockedBy(getHasName(HRItems.MORTAR_PESTLE.get()), has(HRItems.MORTAR_PESTLE.get()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HRItems.MORTAR_PESTLE.get())
                 .pattern(" S ")
                 .pattern(" F ")
