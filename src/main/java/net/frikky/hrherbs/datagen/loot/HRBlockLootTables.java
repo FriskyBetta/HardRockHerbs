@@ -27,9 +27,7 @@ public class HRBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(HRBlocks.PLACEHOLDER_BLOCK.get());
         this.dropSelf(HRBlocks.MAGNESIUM_ORE.get());
-
 
         this.add(HRBlocks.MAGNESIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(HRBlocks.MAGNESIUM_ORE.get(), HRItems.RAW_MAGNESIUM.get()));

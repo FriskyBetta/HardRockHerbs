@@ -21,9 +21,6 @@ public class HRBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, HardRockPlants.MOD_ID);
 
 //Add new blocks like this
-    public static final RegistryObject<Block> PLACEHOLDER_BLOCK = registerBlock("placeholder_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
-
     public static final RegistryObject<Block> MAGNESIUM_ORE = registerBlock("magnesium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
 

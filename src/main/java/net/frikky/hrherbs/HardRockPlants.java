@@ -83,7 +83,6 @@ public class HardRockPlants
             event.accept(HRItems.CURING_PASTE);
             event.accept(HRItems.BURN_PASTE);
 
-            event.accept(HRBlocks.PLACEHOLDER_BLOCK);
             event.accept(HRBlocks.MAGNESIUM_ORE);
         }
 

@@ -23,7 +23,6 @@ public class HRBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(HRBlocks.PLACEHOLDER_BLOCK);
         blockWithItem(HRBlocks.MAGNESIUM_ORE);
 
         makeAloeCrop((CropBlock) HRBlocks.ALOE_CROP.get(), "aloevera_stage", "aloevera_stage");

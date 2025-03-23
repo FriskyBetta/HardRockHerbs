@@ -33,19 +33,6 @@ public class HRRecipeProvider extends RecipeProvider implements IConditionBuilde
         oreSmelting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 200, "magnesium_sulphate");
         oreBlasting(pWriter, HARDROCKPLANTS_SMELTABLES, RecipeCategory.MISC, HRItems.MAGNESIUM_SULPHATE.get(), 0.25f, 100, "magnesium_sulphate");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, HRBlocks.PLACEHOLDER_BLOCK.get())
-                .pattern("SSS")
-                .pattern("SSS")
-                .pattern("SSS")
-                .define('S', HRItems.ALOE_VERA.get())
-                .unlockedBy(getHasName(HRItems.ALOE_VERA.get()), has(HRItems.ALOE_VERA.get()))
-                .save(pWriter);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HRItems.ALOE_VERA.get(), 9)
-                .requires(HRBlocks.PLACEHOLDER_BLOCK.get())
-                .unlockedBy(getHasName(HRBlocks.PLACEHOLDER_BLOCK.get()), has(HRBlocks.PLACEHOLDER_BLOCK.get()))
-                .save(pWriter);
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HRItems.HEALTH_PASTE.get(), 2)
                 .requires(HRItems.PEPPERMINT.get())
                 .requires(HRItems.MORTAR_PESTLE.get())

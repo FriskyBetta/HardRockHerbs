@@ -32,8 +32,5 @@ public class HRBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(HRBlocks.MAGNESIUM_ORE.get());
-
-        this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(HRBlocks.PLACEHOLDER_BLOCK.get());
     }
 }

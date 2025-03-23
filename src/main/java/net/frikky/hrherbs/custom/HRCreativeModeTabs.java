@@ -55,7 +55,6 @@ public class HRCreativeModeTabs {
                         output.accept(HRItems.BURN_PASTE.get());
 
                         //Blocks
-                        output.accept(HRBlocks.PLACEHOLDER_BLOCK.get());
                         output.accept(HRBlocks.MAGNESIUM_ORE.get());
 
                     })
