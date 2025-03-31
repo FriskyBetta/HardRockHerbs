@@ -54,6 +54,9 @@ public class HRCreativeModeTabs {
                         output.accept(HRItems.CURING_PASTE.get());
                         output.accept(HRItems.BURN_PASTE.get());
 
+                        output.accept(HRItems.BURN_BANDAGE.get());
+                        output.accept(HRItems.HEALTH_BANDAGE.get());
+
                         //Blocks
                         output.accept(HRBlocks.MAGNESIUM_ORE.get());
 

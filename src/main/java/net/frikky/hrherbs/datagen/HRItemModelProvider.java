@@ -46,6 +46,9 @@ public class HRItemModelProvider extends ItemModelProvider {
         hrItem(HRItems.CURING_PASTE);
         hrItem(HRItems.BURN_PASTE);
 
+        hrItem(HRItems.HEALTH_BANDAGE);
+        hrItem(HRItems.BURN_BANDAGE);
+
         hrItem(HRItems.RAW_MAGNESIUM);
         hrItem(HRItems.MAGNESIUM_SULPHATE);
     }

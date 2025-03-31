@@ -66,7 +66,22 @@ public class HRRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('B', Items.BOWL)
                 .unlockedBy(getHasName(Items.BOWL), has(Items.STICK))
                 .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HRItems.BURN_BANDAGE.get(), 2)
+                .requires(HRItems.BURN_PASTE.get())
+                .requires(Items.PAPER)
+                .requires(Items.HONEYCOMB)
+                .unlockedBy(getHasName(HRItems.MORTAR_PESTLE.get()), has(HRItems.MORTAR_PESTLE.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, HRItems.HEALTH_BANDAGE.get(), 2)
+                .requires(HRItems.HEALTH_PASTE.get())
+                .requires(Items.PAPER)
+                .unlockedBy(getHasName(HRItems.MORTAR_PESTLE.get()), has(HRItems.MORTAR_PESTLE.get()))
+                .save(pWriter);
     }
+
+
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
         oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");

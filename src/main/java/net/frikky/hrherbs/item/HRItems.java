@@ -80,6 +80,13 @@ public class HRItems {
     public static final RegistryObject<Item> BURN_PASTE = ITEMS.register("burn_paste",
             () -> new Item(new Item.Properties()));
 
+    //Bandage Items
+    public static final RegistryObject<Item> BURN_BANDAGE = ITEMS.register("burn_bandage",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HEALTH_BANDAGE = ITEMS.register("health_bandage",
+            () -> new Item(new Item.Properties()));
+
+
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);
     }
